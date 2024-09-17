@@ -4,52 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
   <title>Barkácsbolt</title>
-
-  <style>
-    body {
+<style>
+  body {
       
       color: #ffffff;
       background-image: url(tools.jpg);
       background-repeat: no-repeat ;
       background-size: cover;
     }
-
+  
     table {
-      border-collapse: collapse;
+     
       width: 100%;
     }
-
-    table, th, td {
-      border: 1px solid white;
-    }
-
+  
     h1 {
       color: #ffffff;
       text-align: center;
     }
-
+  
     td {
       padding: 8px;
     }
-
+  
     td[colspan="5"] {
       text-align: center;
     }
-
+  
     ul {
       list-style-type: none;
       padding: 0;
     }
-
+  
     ul li {
       padding: 5px 0;
     }
-
+  
     .red {
       color: red;
     }
-
+  
     .highlight {
       font-size: larger;
     }
@@ -76,7 +72,7 @@
       width: 30px;
       text-align: center;
     }
-
+  
     
     .navbaralso {
     overflow: hidden;
@@ -93,7 +89,7 @@
       padding-top: 1%;
       padding-left: 10%;
    }
-
+  
     .navbaralso img{
       height: 30px;
       width: 30px;
@@ -127,9 +123,19 @@
     .h1balra{
       text-align: left;
     }
+    .tablazat{
+      text-align: center;
+      border: hidden;
+  
+    }
+    .felsot{
+      font-size: x-large;
+      font-style:oblique;
+      font-family: Arial, Helvetica, sans-serif;
+    }
     
-    
-  </style>
+</style>
+
 </head>
 
 <body>
@@ -138,31 +144,36 @@
     <a href="index.html">Főoldal</a>
     <a href="#articles">Festékek</a>
     <a href="#tutorials">Faanyagok</a>
-    <a href="#screencasts">Szerszámkatalógus</a>
+    <a href="furok.html">Szerszámkatalógus</a>
     <a href="#about">Rólunk</a>
     <a href="#blog">Blog</a>
   </div>
   <div class="main">
   <h1>Csináld magad barkácsáruház</h1>
+ <div>
   <img class="mainkep" src="tools2.jpg">
-  <a href="szerszam.html"><button class="button-on-image">Szerszámkatalógus</button></a>
-  <h1 class="h1balra">Nyitvatartás</h1>
-  <table>
-    <tr>
-      <th>Hétfő</th>
-      <th>Kedd</th>
-      <th>Szerda</th>
-      <th>Csütörtök</th>
-      <th>Péntek</th>
-      <th>Szombat</th>
-      <th>Vasárnap</th>
-    </tr>
-    <tr>
-      <td colspan="5">7:30-20:30</td>
-      <td>8:00-20:00</td>
-      <td class="red">Zárva</td>
-    </tr>
+  <a href="furok.html"><button class="button-on-image">Szerszámkatalógus</button></a>
+  <h1 class="h1balra">Nyitvatartás:</h1>
+</div>
+  <section>
+    <table class="tablazat">
+      <tr>
+          <th class="felsot">Hétfő-Péntek</th>
+          <th class="felsot">Szombat</th>
+          <th class="felsot">Vasárnap</th>
+      </tr>
+      <tr>
+          <td class="felsot">7:30-20:00</td>
+          <td class="felsot">8:00-20:00</td>
+          <td class="felsot">Zárva</td>
+      </tr>
   </table>
+  <br><br><br>
+
+
+
+
+  </section>
   
   
 </div>

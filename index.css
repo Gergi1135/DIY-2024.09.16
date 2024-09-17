@@ -1,0 +1,127 @@
+body {
+      
+    color: #ffffff;
+    background-image: url(tools.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+  }
+
+  table {
+   
+    width: 100%;
+  }
+
+  h1 {
+    color: #ffffff;
+    text-align: center;
+  }
+
+  td {
+    padding: 8px;
+  }
+
+  td[colspan="5"] {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  ul li {
+    padding: 5px 0;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .highlight {
+    font-size: larger;
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #1a3683;
+  margin-top: 0px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    padding-top: 1%;
+ }
+  .navbar a:hover {
+    background-color: darkblue;
+    color: rgb(226, 220, 220);
+  }
+  .navbar img{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+  }
+
+  
+  .navbaralso {
+  overflow: hidden;
+  background-color: #1a3683;
+  margin-bottom: 0px;
+  }
+  .navbaralso a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-left: 10%;
+ }
+
+  .navbaralso img{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+  }
+  .main{
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(255,255,255,0.5) ; 
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .mainkep{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .button-on-image {
+    position: absolute;
+    top: 60%; /* A gomb helye a kép tetejéhez viszonyítva */
+    left: 50%; /* A gomb helye a kép bal széléhez viszonyítva */
+    transform: translate(-50%, -50%); /* Középre igazítja a gombot */
+    background-color: #3649f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  .h1balra{
+    text-align: left;
+  }
+  .tablazat{
+    text-align: center;
+    border: hidden;
+
+  }
+  .felsot{
+    font-size: x-large;
+    font-style:oblique;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
