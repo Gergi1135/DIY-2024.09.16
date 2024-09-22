@@ -109,7 +109,7 @@
     }
     .button-on-image {
       position: absolute;
-      top: 60%; /* A gomb helye a kép tetejéhez viszonyítva */
+      top: 80%; /* A gomb helye a kép tetejéhez viszonyítva */
       left: 50%; /* A gomb helye a kép bal széléhez viszonyítva */
       transform: translate(-50%, -50%); /* Középre igazítja a gombot */
       background-color: #3649f4;
@@ -132,6 +132,7 @@
       font-size: x-large;
       font-style:oblique;
       font-family: Arial, Helvetica, sans-serif;
+      border-bottom: solid grey 4px;
     }
    /* Slideshow container */
 .slideshow-container {
@@ -158,7 +159,7 @@
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 20.5%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -202,6 +203,8 @@
 .active, .dot:hover {
   background-color: #717171;
 }  
+
+
 </style>
 
 </head>
@@ -209,20 +212,47 @@
 <body>
   <div class="navbar">
     <a><img src="hammer-svgrepo-com.svg" alt=""></a>
-    <a href="index.html">Főoldal</a>
-    <a href="#articles">Festékek</a>
-    <a href="#tutorials">Faanyagok</a>
-    <a href="furok.html">Szerszámkatalógus</a>
+    <a href="index.html" style="border-bottom: solid 2px;">Főoldal</a>
+    <a href="festekek.html">Festékek</a>
+    <a href="fafestek.html">Faanyagok</a>
+    <a href="szerszam.html">Szerszámkatalógus</a>
     <a href="#about">Rólunk</a>
     <a href="#blog">Blog</a>
   </div>
-  <div class="main">
+<div class="main">
   <h1>Csináld magad barkácsáruház</h1>
  <div>
-  <img class="mainkep" src="tools2.jpg">
-  <a href="furok.html"><button class="button-on-image">Szerszámkatalógus</button></a>
-  <h1 class="h1balra">Nyitvatartás:</h1>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+      <img class="mainkep" src="tools2.jpg">
+      <a href="szerszam.html"><button class="button-on-image">Szerszámkatalógus</button></a>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="mainkep" src="festek.jpg" style="width: 900px;">
+      <a href="festekek.html"><button class="button-on-image">Festékek</button></a>
+
+    </div>
+
+    <div class="mySlides fade">
+      <img src="fafestek.jpeg" style="width: 900px; height: 500px;">
+      <a href="fafestek.html"><button class="button-on-image">Faanyagok</button></a>
+
+
+    </div>
+
+
+
+
+
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 </div>
+  <h1 class="h1balra">Nyitvatartás:</h1>
+
   <section>
     <table class="tablazat">
       <tr>
@@ -251,6 +281,36 @@
     <a >E-mail: info@barkacsaruhaz.hu</a>
     <a >Telefon: +36-1-555-55-55</a>
 </div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
 </body>
 
 </html>
