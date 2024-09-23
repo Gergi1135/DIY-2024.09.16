@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faanyagok</title>
+  <style>
+    body {
+      color: #ffffff;
+      background-image: url('tools.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      color: #1a3683;
+      text-align: center;
+      font-size: 48px;
+      margin-top: 20px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #1a3683;
+    }
+
+    .navbar a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: darkblue;
+    }
+
+    .main {
+      padding: 0 10%;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin: 20px 10%;
+    }
+
+    .wood-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .wood-item {
+      text-align: center;
+      margin: 20px;
+      width: calc(50% - 40px); /* Két oszlop egyenletesen, a margóval együtt */
+    }
+
+    .wood-item img {
+      border-radius: 50%;
+      width: 200px; /* Kép méretének növelése */
+      height: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .wood-item button {
+      background-color: #4a69f4;
+      color: white;
+      border: none;
+      padding: 12px 24px; /* Gomb méretének növelése */
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 25px;
+      margin-top: 15px;
+    }
+
+    .wood-item p {
+      color: #000;
+      font-size: 18px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Egyedi színek a gombokhoz */
+    .buk-button {
+      background-color: #ffa07a;
+    }
+
+    .csersznye-button {
+      background-color: #fa8072;
+    }
+
+    .dio-button {
+      background-color: #f08080;
+    }
+
+    .mahagoni-button {
+      background-color: #ff6347;
+    }
+
+    .tolgy-button {
+      background-color: #cd5c5c;
+    }
+
+    .wood-item button:hover {
+      opacity: 0.8;
+    }
+
+    .navbaralso {
+      overflow: hidden;
+      background-color: #1a3683;
+    }
+
+    .navbaralso a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#"><img src="hammer-svgrepo-com.svg" alt="Logo" height="30" width="30"></a>
+    <a href="index.html">Főoldal</a>
+    <a href="festekek.html">Festékek</a>
+    <a href="faanyagok.html" style="border-bottom: solid 2px;">Faanyagok</a>
+    <a href="szerszam.html">Szerszámkatalógus</a>
+    <a href="rolunk.html">Rólunk</a>
+    <a href="#blog">Blog</a>
+  </div>
+
+  <div class="main">
+    <h1>Faanyagok</h1>
+    <div class="wood-container">
+      <div class="wood-item">
+        <img src="kepek/bukk.jfif" alt="Bükk">
+        <a href="bukk.html"><button class="buk-button">Bükk</button></a>
+        <p>Ár: 2500 Ft/m²</p>
+      </div>
+      <div class="wood-item">
+        <img src="kepek/cseresznye.jpg" alt="Cseresznye">
+        <button class="csersznye-button">Cseresznye</button>
+        <p>Ár: 3000 Ft/m²</p>
+      </div>
+        <div class="wood-item">
+        <img src="kepek/dio.jpg" alt="Dió">
+        <button class="dio-button">Dió</button>
+        <p>Ár: 3500 Ft/m²</p>
+      </div>
+      <div class="wood-item">
+        <img src="kepek/mahagoni.jfif" alt="Mahagóni">
+        <button class="mahagoni-button">Mahagóni</button>
+        <p>Ár: 4000 Ft/m²</p>
+      </div>
+      <div class="wood-item">
+        <img src="kepek/tolgy.jpg" alt="Tölgy">
+        <button class="tolgy-button">Tölgy</button>
+        <p>Ár: 2800 Ft/m²</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbaralso">
+    <a>Elérhetőségeink</a>
+    <a>Levél: DIY barkácsáruház</a>
+    <a>E-mail: info@barkacsaruhaz.hu</a>
+    <a>Telefon: +36-1-555-55-55</a>
+  </div>
+</body>
+
+</html>

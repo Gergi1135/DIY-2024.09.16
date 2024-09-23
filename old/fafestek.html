@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Festékek - Barkácsbolt</title>
+  <style>
+    body {
+        
+        color: #ffffff;
+        background-image: url(tools.jpg);
+        background-repeat: no-repeat ;
+        background-size: cover;
+      }
+    
+      table {
+       
+        width: 100%;
+      }
+    
+      h1 {
+        color: #ffffff;
+        text-align: center;
+      }
+    
+      td {
+        padding: 8px;
+      }
+    
+      td[colspan="5"] {
+        text-align: center;
+      }
+    
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+    
+      ul li {
+        padding: 5px 0;
+      }
+    
+      .red {
+        color: red;
+      }
+    
+      .highlight {
+        font-size: larger;
+      }
+      .navbar {
+      overflow: hidden;
+      background-color: #1a3683;
+      margin-top: 0px;
+      }
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 18px;
+        text-decoration: none;
+        padding-top: 1%;
+     }
+      .navbar a:hover {
+        background-color: darkblue;
+        color: rgb(226, 220, 220);
+      }
+      .navbar img{
+        height: 30px;
+        width: 30px;
+        text-align: center;
+      }
+    
+      
+      .navbaralso {
+      overflow: hidden;
+      background-color: #1a3683;
+      margin-bottom: 0px;
+      }
+      .navbaralso a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 18px;
+        text-decoration: none;
+        padding-top: 1%;
+        padding-left: 10%;
+     }
+    
+      .navbaralso img{
+        height: 30px;
+        width: 30px;
+        text-align: center;
+      }
+      .main{
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: rgba(255,255,255,0.5) ; 
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .mainkep{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+      }
+      .button-on-image {
+        position: absolute;
+        top: 80%; /* A gomb helye a kép tetejéhez viszonyítva */
+        left: 50%; /* A gomb helye a kép bal széléhez viszonyítva */
+        transform: translate(-50%, -50%); /* Középre igazítja a gombot */
+        background-color: #3649f4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 50px;
+      }
+      .h1balra{
+        text-align: left;
+      }
+      .tablazat{
+        text-align: center;
+        border: hidden;
+    
+      }
+      .felsot{
+        font-size: x-large;
+        font-style:oblique;
+        font-family: Arial, Helvetica, sans-serif;
+        border-bottom: solid grey 4px;
+      }
+     /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 20.5%;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }  
+  
+  
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <a><img src="hammer-svgrepo-com.svg" alt=""></a>
+    <a href="index.html">Főoldal</a>
+    <a href="festekek.html" style="border-bottom: solid 2px;">Festékek</a>
+    <a href="faanyag.html">Faanyagok</a>
+    <a href="szerszam.html">Szerszámkatalógus</a>
+    <a href="rolunk.html">Rólunk</a>
+    <a href="#blog">Blog</a>
+  </div>
+
+  <div class="main">
+    <h1>Festékek Kínálata</h1>
+    <table class="tablazat">
+      <thead>
+        <tr>
+          <th>Festék neve</th>
+          <th>Gyártó</th>
+          <th>Felhasználás</th>
+          <th>Mennyiség (liter)</th>
+          <th>Egységár (Ft/liter)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Színes falfesték</td>
+          <td>Trilak</td>
+          <td>Beltéri falak</td>
+          <td>10</td>
+          <td>1990</td>
+        </tr>
+        <tr>
+          <td>Fa lazúr</td>
+          <td>Sadolin</td>
+          <td>Fa felületek</td>
+          <td>5</td>
+          <td>3200</td>
+        </tr>
+        <tr>
+          <td>Fémfesték</td>
+          <td>Hammerite</td>
+          <td>Kültéri fémfelületek</td>
+          <td>2.5</td>
+          <td>4500</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="navbaralso">
+    <a>Elérhetőségeink</a>
+    <a>Levél: DIY barkácsáruház</a>
+    <a>E-mail: info@barkacsaruhaz.hu</a>
+    <a>Telefon: +36-1-555-55-55</a>
+  </div>
+
+</body>
+
+</html>
