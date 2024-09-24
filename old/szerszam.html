@@ -1,175 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>szerszam</title>
-    <style>
-        body {
-            
-            color: #ffffff;
-            background-image: url(tools.jpg);
-            background-repeat: no-repeat ;
-            background-size: cover;
-          }
-        
-          table {
-           
-            width: 100%;
-          }
-        
-          h1 {
-            color: #ffffff;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: bold;
-          }
-        
-          td {
-            padding: 8px;
-          }
-        
-          td[colspan="5"] {
-            text-align: center;
-          }
-        
-          ul {
-            list-style-type: none;
-            padding: 0;
-          }
-        
-          ul li {
-            padding: 5px 0;
-          }
-        
-          .red {
-            color: red;
-          }
-        
-          .highlight {
-            font-size: larger;
-          }
-          .navbar {
-          overflow: hidden;
-          background-color: #1a3683;
-          margin-top: 0px;
-          }
-          .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 18px;
-            text-decoration: none;
-            padding-top: 1%;
-         }
-          .navbar a:hover {
-            background-color: darkblue;
-            color: rgb(226, 220, 220);
-          }
-          .navbar img{
-            height: 30px;
-            width: 30px;
-            text-align: center;
-          }
-        
-          
-          .navbaralso {
-          overflow: hidden;
-          background-color: #1a3683;
-          margin-bottom: 0px;
-          }
-          .navbaralso a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 18px;
-            text-decoration: none;
-            padding-top: 1%;
-            padding-left: 10%;
-         }
-        
-          .navbaralso img{
-            height: 30px;
-            width: 30px;
-            text-align: center;
-          }
-          .main{
-            padding-left: 10%;
-            padding-right: 10%;
-            background-color: rgba(255,255,255,0.5) ; 
-            margin-left: 10%;
-            margin-right: 10%;
-            padding-bottom: 40%;
-          }
-          .drill{
-            width: 10%;
-            height: 10%;
-            
-          }
-          .drill1{
-            
-            display:flex;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <!-- FontAwesome ikonok hozzáadása -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Szerszámkatalógus - DIY Barkácsbolt</title>
+  <style>
+    body {
+      color: #ffffff;
+      background-image: url('tools.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-            
-            
-            
-          }
-          img.drill{
-            background-color: red;
-            border-radius: 100%;
-          }
-</style>
+    h1 {
+      color: #ffffff;
+      text-align: center;
+      padding-top: 30px;
+    }
 
+    .navbar {
+      overflow: hidden;
+      background-color: #1a3683;
+      margin-top: 0px;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 18px;
+      text-decoration: none;
+      padding-top: 1%;
+    }
+
+    .navbar a:hover {
+      background-color: darkblue;
+      color: rgb(226, 220, 220);
+    }
+
+    .navbar img {
+      height: 30px;
+      width: 30px;
+      text-align: center;
+    }
+
+    .catalog {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+      padding: 0 10%;
+    }
+
+    .item {
+      text-align: center;
+      margin: 20px;
+      color: black;
+    }
+
+    .item i {
+      font-size: 4em;
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    .item h3 {
+      color: #1a3683;
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+
+    .item p {
+      color: #000000;
+      margin: 0;
+    }
+
+    .navbaralso {
+      background-color: #1a3683;
+      color: white;
+      padding: 14px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    svg{
+      width: 100px;
+      height: 100px;
+    }
+    .catalog{
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px;
+      border-radius: 8px;
+      color: #000000; /* Betűszín fekete a fő tartalomhoz */
+    }
+  </style>
 </head>
+
 <body>
-    <div class="navbar">
-        <a><img src="hammer-svgrepo-com.svg" alt=""></a>
-        <a href="index.html">Főoldal</a>
-        <a href="fafestek.html">Festékek</a>
-        <a href="faanyag.html">Faanyagok</a>
-        <a href="furok.html" style="border-bottom: solid 2px;">Szerszámkatalógus</a>
-        <a href="rolunk.html">Rólunk</a>
-        <a href="#blog">Blog</a>
-      </div>
+  <div class="navbar">
+    <a><img src="hammer-svgrepo-com.svg" alt=""></a>
+    <a href="index.html">Főoldal</a>
+    <a href="fafestek.html">Festékek</a>
+    <a href="faanyag.html">Faanyagok</a>
+    <a href="szerszam.html" style="border-bottom: solid 2px;">Szerszámkatalógus</a>
+    <a href="rolunk.html">Rólunk</a>
+    <a href="#blog">Blog</a>
+  </div>
 
-        <div class="main">
-            <h1>Szerszámkatalógus</h1>
-        <table>
-          <tr>
-            <td>
-            <div class="drill1">
-                <img class="drill" src="kepek/drill.png">
-            </div>
-          </td>
-          <td>
-            <div>
-              <img src="kepek/moso.PNG">
-            </div>
-          </td>
-          </tr>
-        </table>
-    
-    
-    
-    
-        </div>
+  <h1>Szerszámkatalógus</h1>
 
-
-
-
-
-
-
-    <div class="navbaralso">
-        <a >Elérhetőségeink</a>
-        <a >Levél: DIY barkácsáruház</a>
-        <a >E-mail: info@barkacsaruhaz.hu</a>
-        <a >Telefon: +36-1-555-55-55</a>
+  <div class="catalog">
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6 .9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z"/></svg>
+      <h3><a href="#">Fúrónk</a></h3>
     </div>
 
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M269.5 69.9c11.1-7.9 25.9-7.9 37 0C329 85.4 356.5 96 384 96c26.9 0 55.4-10.8 77.4-26.1c0 0 0 0 0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 149.7 417 160 384 160c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4C42.8 92.6 61 83.5 75.3 71.6c11.1-9.5 27.3-10.1 39.2-1.7c0 0 0 0 0 0C136.7 85.2 165.1 96 192 96c27.5 0 55-10.6 77.5-26.1zm37 288C329 373.4 356.5 384 384 384c26.9 0 55.4-10.8 77.4-26.1c0 0 0 0 0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 437.7 417 448 384 448c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7c0 0 0 0 0 0C136.7 373.2 165.1 384 192 384c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0zm0-144C329 229.4 356.5 240 384 240c26.9 0 55.4-10.8 77.4-26.1c0 0 0 0 0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 293.7 417 304 384 304c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.5 27.3-10.1 39.2-1.7c0 0 0 0 0 0C136.7 229.2 165.1 240 192 240c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z"/></svg>
+      <h3><a href="#">Magasnyomású mosó berendezések</a></h3>
+    </div>
 
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M465 7c-8.5-8.5-22-9.4-31.6-2.1l-104 80c-5.9 4.5-9.4 11.6-9.4 19l0 54.1-85.6 85.6c6.7 4.2 13 9.3 18.8 15.1s10.9 12.2 15.1 18.8L353.9 192l54.1 0c7.5 0 14.5-3.5 19-9.4l80-104c7.4-9.6 6.5-23.1-2.1-31.6L465 7zM121.4 281.4l-112 112c-12.5 12.5-12.5 32.8 0 45.3l64 64c12.5 12.5 32.8 12.5 45.3 0l112-112c30.2-30.2 30.2-79.1 0-109.3s-79.1-30.2-109.3 0z"/></svg>
+      <h3><a href="#">Csavarhúzók</a></h3>
+    </div>
+  </div>
 
+  <div class="navbaralso">
+    <p>Elérhetőségeink: Levél: DIY barkácsáruház | E-mail: info@barkacsaruhaz.hu | Telefon: +36-1-555-55-55</p>
+  </div>
 </body>
+
 </html>
